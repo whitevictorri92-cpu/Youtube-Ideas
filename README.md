@@ -2,7 +2,7 @@
 
 **Project Status:** Actively under development.
 
-This repository contains a comprehensive suite of tools designed to automate and streamline the content creation process for the "Miss Gracy Baby" YouTube channel. The system leverages the Gemini AI to generate content ideas, video scripts, metadata, and even complete video files.
+This repository contains a comprehensive suite of tools designed to automate and streamline the content creation process for the "Miss Gracy Baby" YouTube channel. The system leverages the Gemini AI to generate content ideas, video scripts, and metadata, all managed through a user-friendly graphical interface.
 
 ## Table of Contents
 
@@ -15,7 +15,6 @@ This repository contains a comprehensive suite of tools designed to automate and
   - [Installation](#installation)
   - [Usage](#usage)
 - [System Components](#system-components)
-  - [Web Interface](#web-interface)
   - [Video Generator](#video-generator)
   - [Content Idea Generator](#content-idea-generator)
   - [Video Script Generator](#video-script-generator)
@@ -33,7 +32,7 @@ The Miss Gracy Baby content generation system is a Python-based application with
 
 ## Features
 
-- **Web-Based UI**: A simple web page to control the content generation process.
+- **Graphical User Interface**: A user-friendly interface to control the content generation process.
 - **Automated Video Creation**: Generates complete, downloadable `.mp4` video files.
 - **Text-to-Speech Voiceover**: Automatically generates a voiceover from the script.
 - **Content Idea Generation**: Automatically generate content ideas based on predefined content pillars and themes.
@@ -43,26 +42,35 @@ The Miss Gracy Baby content generation system is a Python-based application with
 - **Workflow Management**: A centralized workflow manager to orchestrate the entire content creation process.
 
 ## Project Structure
-
 ```
 /
+├── .gitignore
 ├── gemini-config.json
-├── Miss Gracy Baby Content Blueprint.md
-├── prompt-templates/
-│   ├── ...
-├── scripts/
-│   ├── ...
-├── web/
-│   ├── app.py
-│   ├── static/
-│   │   ├── script.js
-│   │   └── style.css
-│   └── templates/
-│       └── index.html
-├── requirements.txt
+├── gui.py
+├── idea
 ├── install.sh
+├── Miss Gracy Baby Content Blueprint.md
+├── README.md
+├── requirements.txt
 ├── start.sh
-└── README.md
+├── .git/
+├── prompt-templates/
+│   ├── content-pillar-templates.json
+│   ├── quality-standards.json
+│   └── video-structure-template.json
+├── scripts/
+│   ├── batch_processor.py
+│   ├── content_idea_generator.py
+│   ├── generate_video_script.py
+│   ├── metadata_generator.py
+│   ├── quality_control.py
+│   ├── video_generator.py
+│   ├── workflow_manager.py
+│   └── __pycache__/
+└── venv/
+    ├── bin/
+    ├── include/
+    └── lib/
 ```
 
 ## Getting Started
@@ -71,7 +79,6 @@ The Miss Gracy Baby content generation system is a Python-based application with
 
 - Python 3.8 or higher
 - Git
-- A modern web browser
 
 ### Download
 
@@ -115,30 +122,16 @@ The installation process is automated with the `install.sh` script.
     }
     ```
 
-2.  **Make the Start Script Executable:**
-    Open your terminal and run the following command once:
+2.  **Run the Application:**
+    Execute the `gui.py` script:
     ```bash
-    chmod +x start.sh
+    python3 gui.py
     ```
 
-3.  **Run the Application:**
-    Execute the start script:
-    ```bash
-    ./start.sh
-    ```
-
-4.  **Access the Web Interface:**
-    Once the server is running, open your web browser and navigate to:
-    [http://127.0.0.1:5000](http://127.0.0.1:5000)
-
-    You can now use the buttons on the web page to generate content and videos.
+3.  **Use the GUI:**
+    The application window will open, and you can use the buttons to generate content.
 
 ## System Components
-
-### Web Interface
-
-- **Files:** `web/app.py`, `web/templates/index.html`, `web/static/*`
-- **Purpose:** Provides a user-friendly web interface for interacting with the content generation tools.
 
 ### Video Generator
 

@@ -33,8 +33,21 @@ if ! command_exists $PYTHON_CMD; then
 fi
 echo "Python 3 found: $($PYTHON_CMD --version)"
 
-# 2. Install Dependencies
-echo_message "[2/2] Installing required libraries..."
+# 2. Check for tkinter
+echo_message "[2/3] Checking for tkinter..."
+if ! $PYTHON_CMD -c "import tkinter" >/dev/null 2>&1; then
+    echo "WARNING: tkinter is not installed. It is required for the GUI."
+    echo "Please install it using your system's package manager."
+    echo "For Debian/Ubuntu: sudo apt-get install python3-tk"
+    echo "For Fedora/CentOS: sudo dnf install python3-tkinter"
+    # Optionally, you could exit here if tkinter is strictly required
+    # exit 1
+else
+    echo "tkinter is already installed."
+fi
+
+# 3. Install Dependencies
+echo_message "[3/3] Installing required libraries from $REQUIREMENTS_FILE..."
 if [ ! -f "$REQUIREMENTS_FILE" ]; then
     echo "ERROR: '$REQUIREMENTS_FILE' not found. Cannot install dependencies."
     exit 1
