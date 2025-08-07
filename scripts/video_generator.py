@@ -1,15 +1,18 @@
 
 import os
+import random
 from gtts import gTTS
-from moviepy.editor import VideoFileClip, ImageClip, concatenate_videoclips, AudioFileClip
+from moviepy.editor import *
 import requests
 from bs4 import BeautifulSoup
 
 class VideoGenerator:
     def __init__(self, script):
         self.script = script
-        self.output_dir = "web/static/generated_videos"
+        self.output_dir = "generated_videos"
+        self.placeholder_dir = "placeholder_images"
         os.makedirs(self.output_dir, exist_ok=True)
+        os.makedirs(self.placeholder_dir, exist_ok=True)
 
     def generate_video(self):
         audio_clips = []
@@ -26,6 +29,9 @@ class VideoGenerator:
 
                 # Fetch image
                 image_file = self._fetch_image(content.get('visual_description', text))
+                if not image_file:
+                    image_file = self._get_placeholder_image()
+                
                 if image_file:
                     image_files.append(image_file)
 
@@ -62,3 +68,9 @@ class VideoGenerator:
         except Exception as e:
             print(f"Error fetching image: {e}")
             return None
+
+    def _get_placeholder_image(self):
+        placeholders = os.listdir(self.placeholder_dir)
+        if not placeholders:
+            return None
+        return os.path.join(self.placeholder_dir, random.choice(placeholders))

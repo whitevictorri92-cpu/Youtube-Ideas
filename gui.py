@@ -175,7 +175,7 @@ class App(tk.Tk):
             return
 
         self.output_text.delete(1.0, tk.END)
-        self.status_bar.config(text="Generating script...")
+        self.status_bar.config(text="Generating script... Querying LLM, this may take a moment.")
         self.disable_buttons()
         self.run_in_thread(self._generate_script_task)
 
@@ -201,21 +201,14 @@ class App(tk.Tk):
 
     def _run_workflow_task(self):
         try:
+            # This class simulates the argparse.Namespace object that the
+            # WorkflowManager expects.
             class Args:
                 def __init__(self, pillar, category, subcategory, baby_age):
                     self.generate_ideas = True
                     self.generate_scripts = True
-                    self.quality_check = True
-                    self.generate_metadata = True
-                    self.batch_process = False
-                    self.create_schedule = False
-                    self.pillar = pillar
-                    self.category = category
-                    self.subcategory = subcategory
-                    self.baby_age = baby_age
-                    self.theme_based = False
-                    self.weekly_plan = False
-                    self.start_date = None
+                    self.quality_check = False  # Disabled due to missing dependencies
+                    self.generate_metadata = False  # Disabled due to missing dependencies
                     self.idea_count = 1
                     self.script_count = 1
                     self.batch_file = None
@@ -225,15 +218,35 @@ class App(tk.Tk):
                     self.log_level = 'INFO'
                     self.dry_run = False
                     self.report = True
+                    self.pillar = pillar
+                    self.category = category
+                    self.subcategory = subcategory
+                    self.baby_age = baby_age
+                    self.theme_based = False
+                    self.weekly_plan = False
+                    self.start_date = None
+
+            # Ensure required fields are selected
+            if not all([self.pillar_var.get(), self.category_var.get(), self.subcategory_var.get()]):
+                messagebox.showerror("Error", "Please select a pillar, category, and subcategory to run the workflow.")
+                return
 
             args = Args(self.pillar_var.get(), self.category_var.get(), self.subcategory_var.get(), self.baby_age_var.get())
-            workflow_manager = WorkflowManager()
+
+            print("Initializing Workflow Manager...")
+            # Assumes a valid 'gemini-config.json' exists in the root directory.
+            workflow_manager = WorkflowManager("gemini-config.json")
+            print("Creating workflow configuration...")
             workflow_config = workflow_manager.create_workflow_config(args)
+            print("Executing workflow...")
             workflow_state = workflow_manager.execute_workflow(workflow_config)
-            print(workflow_state)
-            messagebox.showinfo("Success", "Workflow completed successfully!")
+
+            print("\n--- Workflow Report ---")
+            report = workflow_manager.generate_workflow_report(workflow_state)
+            print(json.dumps(report, indent=2))
+            messagebox.showinfo("Success", "Workflow executed. Check output for details.")
         except Exception as e:
-            messagebox.showerror("Error", str(e))
+            messagebox.showerror("Workflow Error", f"An error occurred during the workflow: {str(e)}")
 
     def generate_video(self):
         if not self.pillar_var.get() or not self.category_var.get() or not self.subcategory_var.get():
@@ -257,8 +270,6 @@ class App(tk.Tk):
 
             video_generator = VideoGenerator(script)
             video_path = video_generator.generate_video()
-            print(f"Video generated at: {video_path}")
-            messagebox.showinfo("Success", f"Video generated at: {video_path}")
         except Exception as e:
             messagebox.showerror("Error", str(e))
 
