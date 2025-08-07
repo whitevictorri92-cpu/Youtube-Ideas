@@ -1,0 +1,115 @@
+{
+  "template_name": "Miss Gracy Baby Video Structure",
+  "description": "Proven 5-minute video structure template for Miss Gracy Baby content",
+  "sections": {
+    "hook": {
+      "duration": "0:00-0:15",
+      "length": "15 seconds",
+      "objectives": [
+        "High-energy opening",
+        "Intriguing question or statement", 
+        "Visual attention-grabber",
+        "Immediate audience engagement"
+      ],
+      "elements": [
+        "Catchy opening line",
+        "Visual hook (baby's reaction, exciting moment)",
+        "Music: Upbeat, trending audio",
+        "Text overlay: Key question or statement"
+      ],
+      "examples": [
+        "You won't believe what skill Gracy mastered at just 8 months!",
+        "This is what happens when we let baby explore the kitchen for the first time!",
+        "The one trick that saved our bedtime routine forever!",
+        "Our family tradition that brings us closer every single day!",
+        "Can baby complete this sensory challenge? Watch to find out!"
+      ]
+    },
+    "setup": {
+      "duration": "0:15-0:30", 
+      "length": "15 seconds",
+      "objectives": [
+        "Context establishment",
+        "What viewers will learn/see",
+        "Personal connection element"
+      ],
+      "elements": [
+        "Brief introduction to the activity/moment",
+        "What to expect in the video",
+        "Personal connection or backstory",
+        "Transition to main content"
+      ],
+      "structure": "Today we're going to [activity] and I'm so excited because [reason]. Gracy has been working on this and I can't wait to show you how it goes!"
+    },
+    "main_content": {
+      "duration": "0:30-3:30",
+      "length": "3 minutes",
+      "objectives": [
+        "Core content delivery",
+        "Multiple engaging segments",
+        "Natural transitions between topics",
+        "Authentic baby reactions and moments"
+      ],
+      "elements": [
+        "Step-by-step demonstration or narrative",
+        "Multiple camera angles (wide, medium, close-up)",
+        "Baby's authentic reactions and interactions",
+        "Natural transitions between segments",
+        "Background music at moderate volume",
+        "Text overlays for key points"
+      ],
+      "pacing_guidelines": {
+        "exciting_moments": "Fast cuts every 10-15 seconds",
+        "calm_moments": "Slower pacing, longer shots",
+        "transitions": "Smooth cuts, minimal flashy effects"
+      }
+    },
+    "educational_element": {
+      "duration": "3:30-4:00",
+      "length": "30 seconds", 
+      "objectives": [
+        "Learning point or takeaway",
+        "Parenting tip or insight",
+        "Developmental milestone note"
+      ],
+      "elements": [
+        "Clear, educational tone",
+        "Key learning point or tip",
+        "Developmental insight if applicable",
+        "Simple graphics or text overlays",
+        "Reduced background music"
+      ],
+      "structure": "Did you know that [educational fact]? This is great for Gracy's [developmental area] development. Pro tip: [practical advice]"
+    },
+    "conclusion": {
+      "duration": "4:00-4:30",
+      "length": "30 seconds",
+      "objectives": [
+        "Summary of key points",
+        "Call-to-action (subscribe, comment, share)",
+        "Teaser for next video",
+        "Personal sign-off"
+      ],
+      "elements": [
+        "Summary of main content",
+        "Clear call-to-action text overlay",
+        "Personal sign-off from parent",
+        "Teaser for next video",
+        "Music fade out"
+      ],
+      "call_to_action_options": [
+        "If you enjoyed this video, don't forget to subscribe and hit the notification bell!",
+        "What should we try next? Let me know in the comments below!",
+        "Share this video with a friend who might enjoy it!",
+        "Join us next time for [next video topic]!"
+      ]
+    }
+  },
+  "overall_guidelines": {
+    "total_duration": "4:30 minutes",
+    "energy_progression": "High hook → Consistent main → Calm educational → Positive conclusion",
+    "visual_style": "Warm, natural tones, consistent branding, clean text overlays",
+    "audio_style": "Clear voiceover, appropriate background music, minimal sound effects",
+    "editing_style": "Fast-paced but not jarring, smooth transitions, multiple camera angles"
+  }
+}

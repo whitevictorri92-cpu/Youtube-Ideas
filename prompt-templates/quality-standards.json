@@ -1,0 +1,161 @@
+{
+  "script_structure": {
+    "required_sections": ["hook", "setup", "main_content", "educational_element", "conclusion"],
+    "max_duration": 270,
+    "min_duration": 240,
+    "section_durations": {
+      "hook": {"min": 15, "max": 15},
+      "setup": {"min": 15, "max": 15},
+      "main_content": {"min": 180, "max": 180},
+      "educational_element": {"min": 30, "max": 30},
+      "conclusion": {"min": 30, "max": 30}
+    },
+    "structure_requirements": {
+      "hook": {
+        "elements": ["catchy_opening", "intriguing_question", "visual_attention_grabber"],
+        "energy_level": "high",
+        "max_cuts": 3
+      },
+      "setup": {
+        "elements": ["context_establishment", "viewer_expectations", "personal_connection"],
+        "clarity_requirement": "high"
+      },
+      "main_content": {
+        "elements": ["core_content_delivery", "engaging_segments", "natural_transitions"],
+        "camera_angles": ["wide", "medium", "close-up"],
+        "pacing_variations": ["exciting_moments", "calm_moments"]
+      },
+      "educational_element": {
+        "elements": ["learning_point", "parenting_tip", "developmental_insight"],
+        "tone": "calm_and_informative",
+        "graphics_requirement": "simple_and_clear"
+      },
+      "conclusion": {
+        "elements": ["summary", "call_to_action", "teaser", "personal_signoff"],
+        "cta_requirements": ["subscribe", "comment", "share"]
+      }
+    }
+  },
+  "content_quality": {
+    "min_word_count": 300,
+    "max_word_count": 800,
+    "required_elements": [
+      "baby_age_reference",
+      "developmental_focus",
+      "engaging_language",
+      "clear_structure",
+      "call_to_action"
+    ],
+    "required_element_definitions": {
+      "baby_age_reference": "Reference to baby's age or developmental stage",
+      "developmental_focus": "Focus on developmental milestones or learning objectives",
+      "engaging_language": "Use of enthusiastic, positive, and engaging language",
+      "clear_structure": "Logical flow and organization of content",
+      "call_to_action": "Clear request for viewer engagement"
+    },
+    "prohibited_content": [
+      "inappropriate_language",
+      "unsafe_practices",
+      "negative_stereotypes",
+      "medical_advice",
+      "controversial_topics"
+    ],
+    "prohibited_content_definitions": {
+      "inappropriate_language": "Profanity, offensive terms, or inappropriate expressions",
+      "unsafe_practices": "Activities or advice that could harm the baby",
+      "negative_stereotypes": "Generalizations or stereotypes about groups",
+      "medical_advice": "Diagnosis, treatment, or specific medical recommendations",
+      "controversial_topics": "Politics, religion, or other divisive subjects"
+    },
+    "language_guidelines": {
+      "tone": "warm, positive, and encouraging",
+      "vocabulary": "simple, clear, and age-appropriate",
+      "sentence_structure": "varied but easy to understand",
+      "emotional_content": "authentic and relatable"
+    },
+    "content_balance": {
+      "entertainment_education_ratio": "60:40",
+      "emotional_intellectual_balance": "balanced",
+      "practical_theoretical_content": "practical_focus"
+    }
+  },
+  "engagement_factors": {
+    "min_hashtags": 5,
+    "max_hashtags": 15,
+    "required_cta_types": ["subscribe", "comment", "share"],
+    "cta_frequency": "at_least_one_per_video",
+    "emotional_keywords": [
+      "amazing", "adorable", "heartwarming", "exciting", "magical",
+      "wonderful", "beautiful", "precious", "joyful", "delightful"
+    ],
+    "engagement_score_threshold": 7.0,
+    "shareability_factors": [
+      "universal_appeal",
+      "emotional_impact",
+      "practical_value",
+      "entertainment_value"
+    ],
+    "retention_factors": [
+      "strong_opening",
+      "consistent_pacing",
+      "valuable_content",
+      "clear_structure"
+    ]
+  },
+  "technical_requirements": {
+    "min_title_length": 10,
+    "max_title_length": 80,
+    "min_description_length": 100,
+    "max_description_length": 5000,
+    "required_file_format": "json",
+    "file_size_limit_mb": 10,
+    "naming_convention": "descriptive_and_consistent",
+    "file_organization": "categorized_by_pillar_and_date"
+  },
+  "visual_guidelines": {
+    "video_style": "warm_natural_tones",
+    "text_overlays": "clear_and_consistent",
+    "graphics": "minimal_and_brand_aligned",
+    "transitions": "smooth_and_professional",
+    "camera_work": "stable_and_varied_angles"
+  },
+  "audio_guidelines": {
+    "background_music": "appropriate_volume_and_family_friendly",
+    "voiceover": "clear_enthusiastic_and_conversational",
+    "sound_effects": "minimal_and_for_emphasis",
+    "audio_levels": "consistent_and_clear"
+  },
+  "brand_alignment": {
+    "voice_tone": "warm_authentic_and_engaging",
+    "values": "family_focused_positive_and_supportive",
+    "messaging": "educational_entertaining_and_inspirational",
+    "consistency": "maintain_across_all_content"
+  },
+  "seo_optimization": {
+    "keyword_strategy": "relevant_and_search_friendly",
+    "title_optimization": "include_main_keywords_and_emotional_words",
+    "description_optimization": "detailed_with_keywords_and_cta",
+    "tags_optimization": "comprehensive_and_categorized",
+    "thumbnail_optimization": "clear_and_engaging"
+  },
+  "compliance_standards": {
+    "content_policy": "strict_family_friendly_guidelines",
+    "privacy_policy": "protect_baby_privacy_and_safety",
+    "copyright_policy": "use_royalty_free_content",
+    "disclosure_policy": "clear_sponsorship_disclosure",
+    "safety_policy": "prioritize_baby_safety_and_wellbeing"
+  },
+  "quality_metrics": {
+    "excellent_threshold": 90,
+    "good_threshold": 80,
+    "acceptable_threshold": 70,
+    "needs_improvement_threshold": 60,
+    "failing_threshold": 50,
+    "grading_categories": {
+      "structure": "25%",
+      "content": "30%",
+      "engagement": "25%",
+      "technical": "20%"
+    }
+  }
+}

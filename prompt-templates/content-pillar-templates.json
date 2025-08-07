@@ -1,0 +1,261 @@
+{
+  "pillar_1_developmental_milestones": {
+    "name": "Developmental Milestones & Learning",
+    "focus": "Tracking and celebrating baby's developmental progress while providing educational value to parents",
+    "target_audience": "Parents seeking developmental guidance and reassurance",
+    "content_mix_percentage": 25,
+    "categories": {
+      "milestone_celebrations": {
+        "subcategories": [
+          "First Steps Series",
+          "First Words Compilation", 
+          "Skill Mastery Moments",
+          "Monthly Development Updates"
+        ],
+        "key_elements": [
+          "Milestone documentation",
+          "Celebratory tone",
+          "Developmental context",
+          "Parental reactions"
+        ]
+      },
+      "learning_activities": {
+        "subcategories": [
+          "Sensory Play Sessions",
+          "Educational Toy Reviews",
+          "Interactive Learning Games",
+          "Music & Movement"
+        ],
+        "key_elements": [
+          "Age-appropriate activities",
+          "Clear learning objectives",
+          "Baby engagement tracking",
+          "Educational value demonstration"
+        ]
+      },
+      "developmental_insights": {
+        "subcategories": [
+          "Milestone Expectations",
+          "Developmental Red Flags",
+          "Early Learning Strategies",
+          "Social Development"
+        ],
+        "key_elements": [
+          "Evidence-based information",
+          "Practical guidance",
+          "Reassurance for parents",
+          "Professional insights"
+        ]
+      }
+    },
+    "prompt_template": "Create a engaging YouTube video script for Miss Gracy Baby focusing on {subcategory} within Developmental Milestones & Learning. The video should follow the proven 5-minute structure: 15-second hook, 15-second setup, 3-minute main content, 30-second educational element, and 30-second conclusion. Target audience is parents seeking {audience_focus}. Include specific details about Gracy's current age ({baby_age}), the developmental milestone or skill being demonstrated, and practical takeaways for parents. The tone should be {tone} and include {specific_elements}."
+  },
+  
+  "pillar_2_daily_adventures": {
+    "name": "Daily Adventures & Exploration",
+    "focus": "Capturing baby's everyday discoveries, playtime, and exploration moments",
+    "target_audience": "Parents and family members who enjoy authentic baby moments",
+    "content_mix_percentage": 30,
+    "categories": {
+      "everyday_discoveries": {
+        "subcategories": [
+          "Morning Routine Magic",
+          "Mealtime Adventures",
+          "Outdoor Explorations",
+          "Indoor Adventures"
+        ],
+        "key_elements": [
+          "Authentic daily moments",
+          "Natural baby reactions",
+          "Exploration focus",
+          "Relatable scenarios"
+        ]
+      },
+      "first_experiences": {
+        "subcategories": [
+          "First Time Series",
+          "New Environment Reactions",
+          "Seasonal Firsts",
+          "Social Firsts"
+        ],
+        "key_elements": [
+          "Novelty emphasis",
+          "First-time reactions",
+          "Milestone documentation",
+          "Emotional authenticity"
+        ]
+      },
+      "play_and_exploration": {
+        "subcategories": [
+          "Toy Discovery Sessions",
+          "Household Exploration",
+          "Nature Adventures",
+          "Creative Play"
+        ],
+        "key_elements": [
+          "Curiosity focus",
+          "Safe exploration",
+          "Interactive elements",
+          "Discovery moments"
+        ]
+      }
+    },
+    "prompt_template": "Generate a captivating YouTube video script for Miss Gracy Baby featuring {subcategory} from Daily Adventures & Exploration. Follow the 5-minute video structure: attention-grabbing 15-second hook, context-setting 15-second setup, engaging 3-minute main content showing exploration, and a heartwarming 30-second conclusion. Capture Gracy's authentic reactions during {activity_description} at {baby_age}. The video should highlight {key_elements} and maintain a {tone} tone that resonates with parents experiencing similar moments."
+  },
+  
+  "pillar_3_parenting_hacks": {
+    "name": "Parenting Hacks & Tips",
+    "focus": "Practical advice, product reviews, and parenting solutions",
+    "target_audience": "New and experienced parents seeking practical guidance",
+    "content_mix_percentage": 20,
+    "categories": {
+      "practical_solutions": {
+        "subcategories": [
+          "Sleep Training Chronicles",
+          "Feeding Solutions",
+          "Diaper Duty Hacks",
+          "Travel with Baby"
+        ],
+        "key_elements": [
+          "Step-by-step instructions",
+          "Before/after comparison",
+          "Problem/solution format",
+          "Practical demonstrations"
+        ]
+      },
+      "product_reviews": {
+        "subcategories": [
+          "Baby Gear Showdown",
+          "Toy Reviews",
+          "Feeding Essentials",
+          "Clothing & Accessories"
+        ],
+        "key_elements": [
+          "Honest assessment",
+          "Pros/cons format",
+          "Value for money",
+          "Personal experience"
+        ]
+      },
+      "parenting_wisdom": {
+        "subcategories": [
+          "Real Parent Talk",
+          "Time Management",
+          "Budget-Friendly Parenting",
+          "Self-Care for Parents"
+        ],
+        "key_elements": [
+          "Authentic storytelling",
+          "Practical advice",
+          "Emotional support",
+          "Community building"
+        ]
+      }
+    },
+    "prompt_template": "Create an informative YouTube video script for Miss Gracy Baby showcasing {subcategory} from Parenting Hacks & Tips. Structure the video with a compelling 15-second hook that presents the {parenting_challenge}, 15-second setup explaining the solution approach, 3-minute main content with detailed demonstration and explanation, 30-second educational element with key takeaways, and a helpful 30-second conclusion with resources. Include specific {practical_elements} and maintain a {tone} tone that builds trust with parents seeking {audience_need}."
+  },
+  
+  "pillar_4_family_bonding": {
+    "name": "Family Bonding & Traditions",
+    "focus": "Creating and documenting family traditions, special moments, and bonding experiences",
+    "target_audience": "Family-oriented viewers who value emotional connections",
+    "content_mix_percentage": 15,
+    "categories": {
+      "family_traditions": {
+        "subcategories": [
+          "Weekly Rituals",
+          "Holiday Celebrations",
+          "Birthday Traditions",
+          "Cultural Heritage"
+        ],
+        "key_elements": [
+          "Tradition documentation",
+          "Multi-generational involvement",
+          "Emotional storytelling",
+          "Legacy building"
+        ]
+      },
+      "special_moments": {
+        "subcategories": [
+          "Family Day Outings",
+          "Multi-Generation Interactions",
+          "Celebration Highlights",
+          "Everyday Magic"
+        ],
+        "key_elements": [
+          "Memory capture",
+          "Emotional authenticity",
+          "Shared experiences",
+          "Connection building"
+        ]
+      },
+      "relationship_building": {
+        "subcategories": [
+          "Parent-Child Bonding",
+          "Sibling Relationships",
+          "Extended Family Bonds",
+          "Community Connections"
+        ],
+        "key_elements": [
+          "Relationship dynamics",
+          "Bonding activities",
+          "Emotional development",
+          "Connection strengthening"
+        ]
+      }
+    },
+    "prompt_template": "Develop a heartwarming YouTube video script for Miss Gracy Baby centered on {subcategory} from Family Bonding & Traditions. Structure the video with an emotional 15-second hook that captures the essence of family bonding, 15-second setup introducing the family members and context, 3-minute main content showcasing authentic interactions and moments, 30-second educational element about relationship building, and a touching 30-second conclusion that emphasizes family values. Focus on {emotional_elements} and maintain a {tone} tone that celebrates family connections."
+  },
+  
+  "pillar_5_fun_challenges": {
+    "name": "Fun Challenges & Entertainment",
+    "focus": "Lighthearted, entertaining content including challenges and trending formats",
+    "target_audience": "Broader audience seeking entertainment and shareable content",
+    "content_mix_percentage": 10,
+    "categories": {
+      "trending_challenges": {
+        "subcategories": [
+          "Baby Sensory Challenges",
+          "Transformation Series",
+          "Reaction Videos",
+          "Playground Adventures"
+        ],
+        "key_elements": [
+          "Challenge format",
+          "Entertainment focus",
+          "Baby reactions",
+          "Shareable moments"
+        ]
+      },
+      "entertainment_formats": {
+        "subcategories": [
+          "Baby's Choice",
+          "Comedy Moments",
+          "Music & Dance",
+          "Story Time"
+        ],
+        "key_elements": [
+          "Entertainment value",
+          "Humor elements",
+          "Engaging visuals",
+          "Interactive components"
+        ]
+      },
+      "interactive_content": {
+        "subcategories": [
+          "Q&A Sessions",
+          "Poll & Decision Making",
+          "Collaboration Videos",
+          "Behind the Scenes"
+        ],
+        "key_elements": [
+          "Audience engagement",
+          "Interactive elements",
+          "Community building",
+          "Authentic behind-the-scenes"
+        ]
+      }
+    },
+    "prompt_template": "Create an entertaining YouTube video script for Miss Gracy Baby featuring {subcategory} from Fun Challenges & Entertainment. Structure the video with a high-energy 15-second hook that creates excitement, 15-second setup explaining the challenge or activity, 3-minute main content filled with engaging moments and baby reactions, 30-second educational element with light learning points, and a fun 30-second conclusion with audience interaction. Focus on {entertainment_elements} and maintain a {tone} tone that maximizes entertainment value and shareability."
+  }
+}

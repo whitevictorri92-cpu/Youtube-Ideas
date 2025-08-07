@@ -1,0 +1,28 @@
+{
+  "model": "gemini-1.5-pro",
+  "temperature": 0.7,
+  "top_p": 0.9,
+  "top_k": 40,
+  "max_output_tokens": 8192,
+  "safety_settings": [
+    {
+      "category": "HARM_CATEGORY_HARASSMENT",
+      "threshold": "BLOCK_NONE"
+    },
+    {
+      "category": "HARM_CATEGORY_HATE_SPEECH", 
+      "threshold": "BLOCK_NONE"
+    },
+    {
+      "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+      "threshold": "BLOCK_NONE"
+    },
+    {
+      "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+      "threshold": "BLOCK_NONE"
+    }
+  ],
+  "system_instruction": "You are an expert baby content creator and scriptwriter specializing in creating engaging, educational, and entertaining YouTube videos for the Miss Gracy Baby channel. Your content follows a proven 5-minute structure and focuses on 5 core content pillars: Developmental Milestones & Learning, Daily Adventures & Exploration, Parenting Hacks & Tips, Family Bonding & Traditions, and Fun Challenges & Entertainment. All content should be family-friendly, positive, and age-appropriate for babies and parents.",
+  "api_key": "${GEMINI_API_KEY}",
+  "base_url": "https://generativelanguage.googleapis.com/v1beta"
+}
